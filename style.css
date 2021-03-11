@@ -117,6 +117,9 @@ a, a:visited, a:hover {
 	border-radius: 5px;
 	width: 450px;
 	margin-bottom: 80px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 15px 0 15px;
 }
 
 .container form .search-field, .container form .search-submit {
@@ -124,12 +127,10 @@ a, a:visited, a:hover {
 	outline: none;
 	border: none;
 	line-height: 40px;
-	position: relative;
 }
 
 .container form .search-field {
 	width: 89%;
-	padding-left: 15px;
 	color: white;
 	font-size: 30px;
 	font-family: 'test';
@@ -139,22 +140,12 @@ a, a:visited, a:hover {
 .container form .search-submit {
 	width: 10%;
 	top: 5px;
+	max-width: 22px;
+	
 }
 
 .container form .search-submit:hover {
 	cursor: pointer;
-}
-
-.container form .search-submit::before {
-	background-image: url(google1.svg);
-	background-position: center center;
-	fill: white;
-	content: "";
-	width: 23px;
-	height: 23px;
-	position: absolute;
-	right: 15px;
-	bottom: -3px;
 }
 
 /* ------------- WAVE ANIMATION ------------- */
