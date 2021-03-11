@@ -1,14 +1,15 @@
-/* ------------- FONTS ------------- */ 
+/* ------------- FONTS ------------- */
+
 @font-face {
-  font-family: 'test';
-  src: url('test.woff') format('woff');
+	font-family: 'test';
+	src: url('test.woff') format('woff');
 }
 
-/* ------------- STARTER ------------- */ 
+/* ------------- STARTER ------------- */
 
-*{
-  margin:0;
-  padding:0;
+* {
+	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -27,18 +28,18 @@ a, a:visited, a:hover, .box .box-container:hover, .box .box-container {
 }
 
 .box .box-container:hover {
-	-webkit-box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.75);
-	-moz-box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.75);
-	box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 4px 4px 15px -5px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 4px 4px 15px -5px rgba(0, 0, 0, 0.75);
+	box-shadow: 4px 4px 15px -5px rgba(0, 0, 0, 0.75);
 }
 
 .container form, .box .box-container {
-	-webkit-box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.25);
-	-moz-box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.25);
-	box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.25);
+	-webkit-box-shadow: 4px 4px 15px -5px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 4px 4px 15px -5px rgba(0, 0, 0, 0.25);
+	box-shadow: 4px 4px 15px -5px rgba(0, 0, 0, 0.25);
 }
 
-/* ------------- CONTAINER STYLING ------------- */ 
+/* ------------- CONTAINER STYLING ------------- */
 
 .container {
 	display: flex;
@@ -47,14 +48,14 @@ a, a:visited, a:hover, .box .box-container:hover, .box .box-container {
 	align-items: center;
 	text-align: center;
 	min-height: 100vh;
-	background: rgb(30,30,33);
-background: linear-gradient(180deg, rgba(30,30,33,1) 0%, rgba(0,0,0,1) 100%);
+	background: rgb(30, 30, 33);
+	background: linear-gradient(180deg, rgba(30, 30, 33, 1) 0%, rgba(0, 0, 0, 1) 100%);
 	/* background-image: url('/zvzw74vx3we61.png');
 	background-repeat: no-repeat;
   background-position: top center; */
 }
 
-/* ------------- LINK STYLING ------------- */ 
+/* ------------- LINK STYLING ------------- */
 
 a, a:visited {
 	color: #6C7789;
@@ -66,7 +67,6 @@ a:hover {
 
 a, a:visited, a:hover {
 	text-decoration: none;
-	
 }
 
 .box .box-container .link {
@@ -76,7 +76,7 @@ a, a:visited, a:hover {
 	text-align: left;
 }
 
-/* ------------- TIME STYLING ------------- */ 
+/* ------------- TIME STYLING ------------- */
 
 .container .time {
 	font-family: 'test';
@@ -84,10 +84,11 @@ a, a:visited, a:hover {
 	margin-bottom: 20px;
 }
 
-/* ------------- BOX STYLING ------------- */ 
+/* ------------- BOX STYLING ------------- */
 
 .box {
 	width: 950px;
+	z-index: 1001;
 }
 
 .box .box-container {
@@ -109,7 +110,7 @@ a, a:visited, a:hover {
 	text-align: left;
 }
 
-/* ------------- SEARCH STYLING ------------- */ 
+/* ------------- SEARCH STYLING ------------- */
 
 .container form {
 	background-color: #1e1e21;
@@ -145,78 +146,82 @@ a, a:visited, a:hover {
 }
 
 .container form .search-submit::before {
-	background-image:url(google1.svg);
-	background-position:center center;
+	background-image: url(google1.svg);
+	background-position: center center;
 	fill: white;
-	content:"";
-	width:23px;
-	height:23px;
-	position:absolute;
-	right:15px;
+	content: "";
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	right: 15px;
 	bottom: -3px;
 }
 
-/* ------------- WAVE ANIMATION ------------- */ 
+/* ------------- WAVE ANIMATION ------------- */
 
-.wave-container .wave{
-	position:absolute;
-	bottom:0;
-	left:0;
-	width:100%;
-	height:100px;
-	background:url('wave.svg');
-	background-size:990px 100px;
+.wave-container .wave {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: url('wave.svg');
+	background-size: 990px 100px;
 	background-repeat: repeat-x;
 	color: #1e1e21;
 }
 
-.wave-container .wave.wave1{
-	animation:animate 30s linear infinite;
-	z-index:1000;
-	opacity:1;
-	animation-delay:0s;
+.wave-container .wave.wave1 {
+	animation: animate 30s linear infinite;
+	z-index: 1000;
+	opacity: 1;
+	animation-delay: 0s;
 	bottom: 0;
 }
-.wave-container .wave.wave2{
-	animation:animate2 15s linear infinite;
-	z-index:999;
-	opacity:0.5;
-	animation-delay:-5s;
+
+.wave-container .wave.wave2 {
+	animation: animate2 15s linear infinite;
+	z-index: 999;
+	opacity: 0.5;
+	animation-delay: -5s;
 	bottom: 10px;
 }
-.wave-container .wave.wave3{
-	animation:animate 30s linear infinite;
-	z-index:998;
-	opacity:0.2;
-	animation-delay:-2s;
+
+.wave-container .wave.wave3 {
+	animation: animate 30s linear infinite;
+	z-index: 998;
+	opacity: 0.2;
+	animation-delay: -2s;
 	bottom: 15px;
-	
 }
-.wave-container .wave.wave4{
-	animation:animate2 5s linear infinite;
-	z-index:997;
-	opacity:0.7;
-	animation-delay:-5s;
+
+.wave-container .wave.wave4 {
+	animation: animate2 5s linear infinite;
+	z-index: 997;
+	opacity: 0.7;
+	animation-delay: -5s;
 	bottom: 20px;
 }
-@keyframes animate{
-	0%{
+
+@keyframes animate {
+	0% {
 		background-position-x: 0;
 	}
-	100%{
+	100% {
 		background-position-x: 990px;
 	}
 }
-@keyframes animate2{
-	0%{
+
+@keyframes animate2 {
+	0% {
 		background-position-x: 0;
 	}
-	100%{
+	100% {
 		background-position-x: -990px;
 	}
 }
 
-/* ------------- MEDIA QUERY ------------- */ 
+/* ------------- MEDIA QUERY ------------- */
 
 @media only screen and (max-width: 985px) {
 	.box-container:nth-child(4), .box-container:nth-child(3) {
@@ -227,5 +232,5 @@ a, a:visited, a:hover {
 	}
 	.box {
 		width: 450px;
-	}  
+	}
 }
