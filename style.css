@@ -12,7 +12,7 @@
 }
 
 body {
-	background-color: #252934;
+	background-color: #000;
 	color: white;
 }
 
@@ -47,6 +47,11 @@ a, a:visited, a:hover, .box .box-container:hover, .box .box-container {
 	align-items: center;
 	text-align: center;
 	min-height: 100vh;
+	background: rgb(30,30,33);
+background: linear-gradient(180deg, rgba(30,30,33,1) 0%, rgba(0,0,0,1) 100%);
+	/* background-image: url('/zvzw74vx3we61.png');
+	background-repeat: no-repeat;
+  background-position: top center; */
 }
 
 /* ------------- LINK STYLING ------------- */ 
@@ -56,7 +61,7 @@ a, a:visited {
 }
 
 a:hover {
-	color: white;
+	color: #005efe;
 }
 
 a, a:visited, a:hover {
@@ -86,7 +91,7 @@ a, a:visited, a:hover {
 }
 
 .box .box-container {
-	background-color: #2E3441;
+	background-color: #1e1e21;
 	width: 200px;
 	height: 220px;
 	float: left;
@@ -107,7 +112,7 @@ a, a:visited, a:hover {
 /* ------------- SEARCH STYLING ------------- */ 
 
 .container form {
-	background-color: #2E3441;
+	background-color: #1e1e21;
 	border-radius: 5px;
 	width: 450px;
 	margin-bottom: 80px;
@@ -162,6 +167,7 @@ a, a:visited, a:hover {
 	background:url('wave.svg');
 	background-size:990px 100px;
 	background-repeat: repeat-x;
+	color: #1e1e21;
 }
 
 .wave-container .wave.wave1{
