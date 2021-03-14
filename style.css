@@ -72,7 +72,7 @@ a, a:visited, a:hover {
 .box .box-container .link {
 	font-family: 'test';
 	font-size: 28px;
-	padding: 20px 0 0 15px;
+	padding: 10px 0px 10px 15px;
 	text-align: left;
 }
 
@@ -97,6 +97,9 @@ a, a:visited, a:hover {
 	height: 220px;
 	float: left;
 	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
 }
 
 .box .box-container:not(:last-child) {
