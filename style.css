@@ -50,9 +50,6 @@ a, a:visited, a:hover, .box .box-container:hover, .box .box-container {
 	min-height: 100vh;
 	background: rgb(30, 30, 33);
 	background: linear-gradient(180deg, rgba(30, 30, 33, 1) 0%, rgba(0, 0, 0, 1) 100%);
-	/* background-image: url('/zvzw74vx3we61.png');
-	background-repeat: no-repeat;
-  background-position: top center; */
 }
 
 /* ------------- LINK STYLING ------------- */
