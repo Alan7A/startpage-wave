@@ -92,7 +92,7 @@ a, a:visited, a:hover {
 .box .box-container {
 	background-color: #23283d;
 	width: 200px;
-	height: 242px;
+	height: 252px;
 	float: left;
 	border-radius: 5px;
 	display: flex;
@@ -160,7 +160,6 @@ a, a:visited, a:hover {
 	background: url('wave.svg');
 	background-size: 990px 100px;
 	background-repeat: repeat-x;
-	color: #23283d;
 }
 
 .wave-container .wave.wave1 {
