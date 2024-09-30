@@ -1,6 +1,6 @@
 function updateClock() {
     var now = new Date();
-	time = now.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
+	let time = now.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
     document.getElementById('time').innerHTML = time;
     setTimeout(updateClock, 1000);
 }
@@ -28,5 +28,8 @@ document.addEventListener('keydown', function(event) {
     }
     if (event.key === 'g' || event.key === 'G') { 
         window.location.href = 'https://mail.google.com/mail/u/0/#inbox';
+    }
+    if (event.key === 'm' || event.key === 'M') { 
+        window.location.href = 'https://monkeytype.com/';
     }
 });
