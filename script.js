@@ -32,4 +32,10 @@ document.addEventListener('keydown', function(event) {
     if (event.key === 'm' || event.key === 'M') { 
         window.location.href = 'https://monkeytype.com/';
     }
+    if (event.key === 'v' || event.key === 'V') { 
+        window.location.href = 'https://calendar.google.com/calendar/u/2/r';
+    }
+    if (event.key === 'i' || event.key === 'I') { 
+        window.location.href = 'https://www.instagram.com/';
+    }
 });
