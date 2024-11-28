@@ -40,7 +40,7 @@ document.addEventListener("keydown", function (event) {
   if (event.key === "i" || event.key === "I") {
     window.location.href = "https://www.instagram.com/";
   }
-  if (event.key === "i" || event.key === "I") {
+  if (event.key === "m" || event.key === "M") {
     window.location.href = "https://meet.google.com/landing?authuser=2";
   }
 });
