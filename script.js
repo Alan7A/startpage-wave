@@ -37,3 +37,38 @@ document.addEventListener("keydown", function (event) {
     window.location.href = url;
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButton = document.getElementById("mode-toggle");
+  const entertainmentBox = document.querySelector(
+    ".box-container:nth-child(1)"
+  );
+
+  // Recuperar el estado guardado o usar "personal" como valor predeterminado
+  const savedMode = localStorage.getItem("pageMode") || "personal";
+
+  // Aplicar el estado guardado al cargar la página
+  toggleButton.textContent = savedMode;
+  if (savedMode === "work") {
+    entertainmentBox.style.display = "none";
+  } else {
+    entertainmentBox.style.display = "flex";
+  }
+
+  // Manejar el cambio de modo
+  toggleButton.addEventListener("click", function () {
+    if (toggleButton.textContent === "personal") {
+      // Cambiar a modo trabajo
+      toggleButton.textContent = "work";
+      entertainmentBox.style.display = "none";
+      // Guardar el estado
+      localStorage.setItem("pageMode", "work");
+    } else {
+      // Cambiar a modo personal
+      toggleButton.textContent = "personal";
+      entertainmentBox.style.display = "flex";
+      // Guardar el estado
+      localStorage.setItem("pageMode", "personal");
+    }
+  });
+});
