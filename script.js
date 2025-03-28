@@ -20,7 +20,7 @@ document.addEventListener("keydown", function (event) {
   const keyMappings = {
     y: "https://www.youtube.com",
     t: "https://x.com/home",
-    h: "https://app.hubstaff.com/reports/559623/time_and_activities",
+    j: "https://medtrainer.atlassian.net/jira/software/c/projects/LSFB/boards/221?quickFilter=678",
     w: "https://web.whatsapp.com/",
     o: "https://open.spotify.com/",
     c: "https://chatgpt.com/",
