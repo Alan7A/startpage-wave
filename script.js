@@ -28,7 +28,8 @@ document.addEventListener("keydown", function (event) {
     v: "https://calendar.google.com/calendar/u/2/r",
     i: "https://www.instagram.com/",
     m: "https://meet.google.com/landing?authuser=2",
-    r: "https://www.reddit.com/"
+    r: "https://www.reddit.com/",
+    d: "https://discord.com/channels/@me"
   };
 
   const key = event.key.toLowerCase();
